@@ -1,44 +1,4 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.banner {
+  min-height: 70vh;
+  /* background-image: url(image/cover.jpg); */
 }
-.cover{
-  background-image: url(image/cover.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height: 481px;
-  color: white;
-
-}
-.cover h1{
-  position: absolute;
-  width: 683px;
-  height: 94px;
-  left: 379px;
-  top: 138px;
-
-  font-family: 'Berkshire Swash';
-  font-style: Sans-serif;
-  font-weight: bold;
-  font-size: 76px;
-  line-height: 94px;
-  text-transform: capitalize;
-  color: #FF5E19;
-}
-.cover p{
-  position: absolute;
-  width: 735px;
-  height: 90px;
-  left: 352px;
-  top: 260px;
-
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 30px;
-
-  letter-spacing: -0.02em;
-}
-
