@@ -52,7 +52,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -68,7 +68,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -84,7 +84,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -100,7 +100,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -116,7 +116,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -132,7 +132,7 @@
                     <p class="card-text">36 Goals - 120 Assist</p>
                     <button
                       type="button"
-                      class="btn btn-primary rounded-0 w-100"
+                      class="select-button btn btn-primary rounded-0 w-100"
                     >
                       SELECT
                     </button>
@@ -144,17 +144,11 @@
 
           <div class="col-md-3">
             <div class="row g-3">
-              <!-- Player List section -->
+              <!-- Players List section -->
               <div class="col-12">
                 <div class="bg-dark text-white p-3">
                   <h4 class="text-center mb-4">Total Selected Players</h4>
-                  <ol>
-                    <li>Messi</li>
-                    <li>Neymar</li>
-                    <li>Neymar</li>
-                    <li>Neymar</li>
-                    <li>Neymar</li>
-                  </ol>
+                  <ol id="player-list"></ol>
                 </div>
               </div>
 
@@ -167,25 +161,29 @@
                   >
                     <p class="m-0">Per Player</p>
                     <input
+                      id="calculate-field"
                       class="form-control w-50 bg-transparent rounded-0 text-white"
                       type="number"
                       placeholder="Enter Amount"
                     />
                   </div>
                   <div class="mb-3">
-                    <button class="bg-info w-100">Calculate</button>
+                    <button id="btn-calculate" class="bg-info w-100">
+                      Calculate
+                    </button>
                   </div>
                   <div
                     class="mb-3 d-flex justify-content-between align-items-center"
                   >
-                    <p class="m-0">Player Expense</p>
-                    <p class="m-0">$5000</p>
+                    <p class="m-0">Players Expense</p>
+                    <p class="m-0">$<span id="expence-total">00</span></p>
                   </div>
                   <div
                     class="mb-3 d-flex justify-content-between align-items-center"
                   >
                     <p class="m-0">Manager</p>
                     <input
+                      id="manager-field"
                       class="form-control w-50 bg-transparent rounded-0 text-white"
                       type="number"
                       placeholder="Enter Amount"
@@ -196,19 +194,24 @@
                   >
                     <p class="m-0">Coach</p>
                     <input
+                      id="coach-field"
                       class="form-control w-50 bg-transparent rounded-0 text-white"
                       type="number"
                       placeholder="Enter Amount"
                     />
                   </div>
                   <div class="mb-3">
-                    <button class="bg-info w-100">Calculate</button>
+                    <button id="btn-total" class="bg-info w-100">
+                      Calculate Total
+                    </button>
                   </div>
                   <div
                     class="mb-3 d-flex justify-content-between align-items-center"
                   >
                     <p class="m-0">Total</p>
-                    <p class="m-0 text-danger">$45500</p>
+                    <p class="m-0 text-danger">
+                      $<span id="total-calculation">00</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -217,5 +220,9 @@
         </div>
       </section>
     </main>
+    \
+
+    <script src="js/common.js"></script>
+    <script src="js/budget.js"></script>
   </body>
 </html>
