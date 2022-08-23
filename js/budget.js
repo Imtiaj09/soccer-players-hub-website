@@ -1,4 +1,4 @@
-//
+//Total Selected Players
 const buttons = document.getElementsByClassName('select-button');
 for (const button of buttons) {
   button.addEventListener('click', function (event) {
